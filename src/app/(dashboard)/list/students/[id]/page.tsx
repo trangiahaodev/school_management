@@ -52,7 +52,7 @@ const SingleStudentPage = () => {
           {/* SMALL CARDS */}
           <div className="flex-1 flex gap-4 justify-between flex-wrap">
             {/* CARD */}
-            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[47%] xl:w-[45%] 2xl:w-[48%]">
+            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[47%] xl:w-[45%] 2xl:w-[47.5%]">
               <Image
                 src="/singleAttendance.png"
                 alt=""
@@ -65,7 +65,7 @@ const SingleStudentPage = () => {
                 <span className="text-sm text-gray-400">Classes</span>
               </div>
             </div>
-            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[47%] xl:w-[45%] 2xl:w-[48%]">
+            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[47%] xl:w-[45%] 2xl:w-[47.5%]">
               <Image
                 src="/singleBranch.png"
                 alt=""
@@ -78,7 +78,7 @@ const SingleStudentPage = () => {
                 <span className="text-sm text-gray-400">Grade</span>
               </div>
             </div>
-            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[47%] xl:w-[45%] 2xl:w-[48%]">
+            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[47%] xl:w-[45%] 2xl:w-[47.5%]">
               <Image
                 src="/singleLesson.png"
                 alt=""
@@ -91,7 +91,7 @@ const SingleStudentPage = () => {
                 <span className="text-sm text-gray-400">Lessons</span>
               </div>
             </div>
-            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[47%] xl:w-[45%] 2xl:w-[48%]">
+            <div className="bg-white p-4 rounded-md flex gap-4 w-full md:w-[47%] xl:w-[45%] 2xl:w-[47.5%]">
               <Image
                 src="/singleClass.png"
                 alt=""
@@ -119,20 +119,30 @@ const SingleStudentPage = () => {
         <div className="bg-white p-4 rounded-md">
           <h1 className="text-xl font-semibold">Shortcuts</h1>
           <div className="mt-4 flex gap-4 flex-wrap text-xs text-gray-500">
-            <Link className="p-3 rounded-md bg-lamaSkyLight" href="/">
-              Student&apos;s Classes
-            </Link>
-            <Link className="p-3 rounded-md bg-lamaPurpleLight" href="/">
+            <Link
+              className="p-3 rounded-md bg-lamaPurpleLight"
+              href={`/list/teachers?classId=${2}`}>
               Student&apos;s Teachers
             </Link>
-            <Link className="p-3 rounded-md bg-lamaYellowLight" href="/">
+            <Link
+              className="p-3 rounded-md bg-lamaYellowLight"
+              href={`/list/lessons?classId=${2}`}>
               Student&apos;s Lessons
             </Link>
-            <Link className="p-3 rounded-md bg-pink-50" href="/">
+            <Link
+              className="p-3 rounded-md bg-pink-50"
+              href={`/list/exams?classId=${2}`}>
               Student&apos;s Exams
             </Link>
-            <Link className="p-3 rounded-md bg-lamaSkyLight" href="/">
+            <Link
+              className="p-3 rounded-md bg-lamaSkyLight"
+              href={`/list/assignments?classId=${2}`}>
               Student&apos;s Assignments
+            </Link>
+            <Link
+              className="p-3 rounded-md bg-lamaSkyLight"
+              href={`/list/results?studentId=${"student2"}`}>
+              Student&apos;s Results
             </Link>
           </div>
         </div>
